@@ -4,10 +4,17 @@
     android:layout_gravity="center"
     android:layout_width="match_parent"
     android:layout_height="350dp"
+    android:clipChildren="false"
+    card_view:cardUseCompatPadding="true"
     card_view:cardCornerRadius="4dp"
     card_view:cardBackgroundColor="#AA66CC"
     card_view:cardElevation="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+
     >
+
     <com.android.volley.toolbox.NetworkImageView
         android:id="@+id/iv"
         android:layout_width="150dp"
@@ -18,12 +25,13 @@
         android:layout_marginTop="80dp"
         />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="65dp"
-        android:id="@+id/list_item"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/author"
 
 
         />
@@ -33,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="65dp"
+        android:layout_marginLeft="225dp"
         android:id="@+id/textViewId" />
     <TextView
         android:layout_width="wrap_content"
