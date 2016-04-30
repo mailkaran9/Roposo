@@ -3,16 +3,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_gravity="center"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
+    android:layout_height="350dp"
     card_view:cardCornerRadius="4dp"
     card_view:cardBackgroundColor="#AA66CC"
     card_view:cardElevation="10dp"
     >
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/shilpa"/>
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/iv"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="80dp"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -22,4 +27,19 @@
 
 
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="65dp"
+        android:id="@+id/textViewId" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="165dp"
+        android:id="@+id/textViewName" />
 </android.support.v7.widget.CardView>
